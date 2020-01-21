@@ -12,7 +12,7 @@ Petr Simecek, January 2020
 from rbp.utils import get_argument_parser, get_input_file
 
 parser = get_argument_parser()
-parser.add_argument('--extra_option', '-e', type=str, 
+parser.add_argument('--extra_option', '-e', type=str,
                     help='You can add an extra option if needed.', default='')
 args = parser.parse_args()
 
