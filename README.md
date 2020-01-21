@@ -1,4 +1,4 @@
-## RBC
+## RBP
 
 This package contains Python tools frequently used at the Panagiotis Alexiou's group at CEITEC (Brno, Czechia).
 
@@ -9,10 +9,8 @@ This package contains Python tools frequently used at the Panagiotis Alexiou's g
  - Ask for forgiveness, not for permission. We are currently all admins, you are allowed to push to master branch.
 
 ### Install
-
  - Clone this repository
    - `git clone git@gitlab.com:RBP_Bioinformatics/rbp.git`
-
  - Cd into the folder and install `rbp` package with `make/setuptools`
    - `cd rbp`
    - `make develop` 
@@ -26,13 +24,13 @@ We describe just high-level structure of package. Details related to particular 
    - `utils` -   system utilities (file i/o, parsing arguments, ...)
 
 ## Development
- - `git checkout master`: update master
+ - Update master: `git checkout master`, `git pull` 
  - Add new, super-cool fuctionality.
  - Run tests as `make test` to check everything works, you can also test a specific file or tests in a specific folder with `pytest -v ./tests/test_specific_file.py`.
  - Commit the changes to git and push them to Gitlab: `git push origin HEAD` (Never `push --force` to master!)
  - **Always** write tests, keep the test coverage over 80%.
- - Consider adding an example or a notebook (be nice to future yourself and the others).
- - Ask somebody else to discuss the changes you made. Document what you have done.
+ - Consider adding an example or a notebook (be nice to future self and the others).
+ - Ask somebody else from the lab to discuss the changes you made. Document what you have done.
  
 ### How to rock
 If you develop something big or refactor the whole package, create a new branch `git checkout -b my_huge_feature` and pull request. Ask for review before merging to master. 
