@@ -2,9 +2,9 @@
 This example shows a standard way to parse arguments and get an input file handler.
 
 Usage:
-    echo "Whenever\nWhatever" | python parsing_input_file.py
-    echo "Whenever\nWhatever" | python parsing_input_file.py -q
-    python parsing_input_file.py -h
+    echo -e "Whenever\nWhatever" | python examples/parsing_input_file.py
+    echo -e "Whenever\nWhatever" | python examples/parsing_input_file.py -q
+    python examples/parsing_input_file.py -h
 
 Petr Simecek, January 2020
 """
