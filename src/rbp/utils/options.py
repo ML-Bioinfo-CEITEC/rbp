@@ -2,8 +2,12 @@ from argparse import ArgumentParser
 
 
 def get_argument_parser(input_option=True, output_option=True, verbose_option=True):
-    """
-    Return argparser.ArgumentParser() with defaults used at RBP Bioinformatics
+    """Return argparser.ArgumentParser() with defaults used at RBP Bioinformatics
+
+    Parameters:
+        input_option (bool): Whether to include '--input_file' option, or not
+        output_option (bool): Whether to include '--output_file' option, or not
+        verbose_option (bool): Whether to include '--verbose' and '--quiet' options, or not
     """
     parser = ArgumentParser()
 

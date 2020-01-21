@@ -4,6 +4,9 @@ import sys
 def get_input_file(args):
     """
     Return an input file handle
+
+    Parameters:
+        args (Namespace): Usually the output of parser.parse_args()
     """
     if args.input_file == "-":
         filehandle = sys.stdin
@@ -15,6 +18,9 @@ def get_input_file(args):
 def get_output_file(args):
     """
     Return an output file handle
+
+    Parameters:
+        args (Namespace): Usually the output of parser.parse_args()
     """
     if args.output_file == "-":
         filehandle = sys.stdout
