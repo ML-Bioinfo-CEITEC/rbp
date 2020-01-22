@@ -40,6 +40,7 @@ If you have a problem, probably everyone has a similar problem. Ask for help, ad
 If you have an idea how to improve the package, put it on [the List](https://docs.google.com/document/d/16rYS_vpz0vdQ3F9lHVQML1CkQCgohLGFX79erP8NYPY/edit?usp=sharing). If you have time, check the List and implement something. 
 
 ### Codestyle
+
 Linters are your friends. For Visual Studio, I recommend PEP-8 and FLAKE8 with minor relaxations (longer lines allowed).
 
 
