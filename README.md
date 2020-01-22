@@ -25,10 +25,10 @@ We describe just high-level structure of package. Details related to particular 
 
 ## Development
  - Update master: `git checkout master`, `git pull` 
- - Add new, super-cool fuctionality.
+ - Modify the code (write new module)
+ - **Always** write tests, keep the test coverage over 80%.
  - Run tests as `make test` to check everything works, you can also test a specific file or tests in a specific folder with `pytest -v ./tests/test_specific_file.py`.
  - Commit the changes to git and push them to Gitlab: `git push origin HEAD` (Never `push --force` to master!)
- - **Always** write tests, keep the test coverage over 80%.
  - Consider adding an example or a notebook (be nice to future self and the others).
  - Ask somebody else from the lab to discuss the changes you made. Document what you have done.
  
@@ -40,7 +40,6 @@ If you have a problem, probably everyone has a similar problem. Ask for help, ad
 If you have an idea how to improve the package, put it on [the List](https://docs.google.com/document/d/16rYS_vpz0vdQ3F9lHVQML1CkQCgohLGFX79erP8NYPY/edit?usp=sharing). If you have time, check the List and implement something. 
 
 ### Codestyle
-
 Linters are your friends. For Visual Studio, I recommend PEP-8 and FLAKE8 with minor relaxations (longer lines allowed).
 
 
