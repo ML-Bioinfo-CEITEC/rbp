@@ -3,9 +3,10 @@
 This package contains Python tools frequently used at the Panagiotis Alexiou's group at CEITEC (Brno, Czechia).
 
 ### Introduction
- - We use Python3 (ideally 3.7)   
+ - We use Python3 (ideally 3.7.4)   
  - For testing, we use pytest.  
  - Please, use virtualenv / pyenv / conda environments. 
+ - To make your life easier, set up [GitLab SSH keys](https://gitlab.com/help/ssh/README#generating-a-new-ssh-key-pair) (if you have never done that, ask for help).
  - Ask for forgiveness, not for permission. We are currently all admins, you are allowed to push to master branch.
 
 ### Install
@@ -40,6 +41,6 @@ If you have a problem, probably everyone has a similar problem. Ask for help, ad
 If you have an idea how to improve the package, put it on [the List](https://docs.google.com/document/d/16rYS_vpz0vdQ3F9lHVQML1CkQCgohLGFX79erP8NYPY/edit?usp=sharing). If you have time, check the List and implement something. 
 
 ### Codestyle
-Linters are your friends. For Visual Studio, I recommend PEP-8 and FLAKE8 with minor relaxations (longer lines allowed).
+Linters are your friends. For Visual Studio, I recommend PEP-8 and FLAKE8 with minor relaxations (e.g. allow longer lines).
 
 
