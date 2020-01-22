@@ -10,11 +10,16 @@ This package contains Python tools frequently used at the Panagiotis Alexiou's g
  - Ask for forgiveness, not for permission. We are currently all admins, you are allowed to push to master branch.
 
 ### Install
+
+From [GitLab](https://gitlab.com/RBP_Bioinformatics/rbp):
  - Clone this repository
    - `git clone git@gitlab.com:RBP_Bioinformatics/rbp.git`
  - Cd into the folder and install `rbp` package with `make/setuptools`
    - `cd rbp`
    - `make develop` 
+
+From [PyPi](https://pypi.org/project/rbp/) (do not use for development):
+ - `pip install rbp`
 
 ### Structure of the package
 We describe just high-level structure of package. Details related to particular modules etc. find in dedicated READMEs.
