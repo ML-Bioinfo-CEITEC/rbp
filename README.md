@@ -6,7 +6,7 @@ This package contains Python tools frequently used at the Panagiotis Alexiou's g
  - We use Python3 (ideally 3.7.4)   
  - For testing, we use pytest.  
  - Please, use virtualenv / pyenv / conda environments. 
- - To make your life easier, set up [GitLab SSH keys](https://gitlab.com/help/ssh/README#generating-a-new-ssh-key-pair) (if you have never done that, ask for help).
+ - To make your life easier, set up [GitLab SSH keys](https://gitlab.com/help/ssh/README#generating-a-new-ssh-key-pair) (if you have never done that, let me help you).
  - Ask for forgiveness, not for permission. We are currently all admins, you are allowed to push to master branch.
 
 ### Install
