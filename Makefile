@@ -1,9 +1,12 @@
-.PHONY: develop test clean_python_cache all
+.PHONY: develop test clean_python_cache all install
 
 all: develop
 
-develop:
+install:
 	pip install -r requirements.txt
+	python setup.py develop
+
+develop:
 	python setup.py develop
 
 test:
