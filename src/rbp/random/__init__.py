@@ -1,0 +1,1 @@
+from .genomic_position import random_genomic_position

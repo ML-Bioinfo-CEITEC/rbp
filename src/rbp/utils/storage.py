@@ -5,7 +5,7 @@ def get_input_file(args):
     """
     Return an input file handle
 
-    Parameters:
+    Args:
         args (Namespace): Usually the output of parser.parse_args()
     """
     if args.input_file == "-":
@@ -19,7 +19,7 @@ def get_output_file(args):
     """
     Return an output file handle
 
-    Parameters:
+    Args:
         args (Namespace): Usually the output of parser.parse_args()
     """
     if args.output_file == "-":
