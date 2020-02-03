@@ -27,6 +27,8 @@ We describe just high-level structure of package. Details related to particular 
  - `notebooks` - Notebooks are excluded from tests, showcasing best practices and interesting experiments. Those notebooks can become obsolete during the time. Notebooks may use packages not included in `requirements.txt`.
  - `tests` - Test coverage of rbp package.
  - `src/rbp`  - Contains the package itself.
+   - `encoding` -   functions to encode/decode genomic sequences into numeric vectors
+   - `random` -   random genomic coordinates, permutations (shuffling) of genomic sequences
    - `utils` -   system utilities (file i/o, parsing arguments, ...)
 
 ## Development

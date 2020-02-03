@@ -21,11 +21,12 @@ pytest-cov==2.8.1
 python-dateutil==2.8.1
 pytz==2019.3
 PyYAML==5.3
--e git+git@gitlab.com:RBP_Bioinformatics/rbp.git@cf0f452683ede4e5130293d066366d2388f1e05f#egg=rbp
+-e git+git@gitlab.com:RBP_Bioinformatics/rbp.git@6acd96ff095496651395a20391479840cd7db3bf#egg=rbp
 requests==2.22.0
 scipy==1.4.1
 seaborn==0.10.0
 six==1.14.0
+tqdm==4.42.1
 urllib3==1.25.8
 wcwidth==0.1.8
 zipp==2.1.0

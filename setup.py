@@ -41,6 +41,7 @@ setup(
         'pyaml>=18.11.0',
         'seaborn>=0.9.0',
         'matplotlib>=3.1.1',
+        'tqdm>=4.42.1',
     ],
     tests_require=['pytest'],
     cmdclass={'test': PyTest},
