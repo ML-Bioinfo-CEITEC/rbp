@@ -37,7 +37,7 @@ def random_genomic_position(chrom_lengths: Union[Dict[str, int], pd.Series] = CH
     The chomosome is generated from a multinomial distribution with chr. lengths used as weights. The generated position is 1-based.
 
     Args:
-        chrom_lengths: Either Dict of pd.Series with chromosomes' lengths
+        chrom_lengths: Either Dict of pd.Series with chromosomes' lengths.
 
     Returns:
         A tuple of chromosome and a 1-based position on this chromosome.
@@ -50,6 +50,26 @@ def random_genomic_position(chrom_lengths: Union[Dict[str, int], pd.Series] = CH
     pos = np.random.randint(chrom_len) + 1
 
     return chrom, pos
+
+
+def random_genomic_interval(interval_length: int,
+                            chrom_lengths: Union[Dict[str, int], pd.Series] = CHR_LENGTHS_Homo_sapiens_GRCh38_SERIES) -> Tuple[str, int, int]:
+    """Returns a random genomic interval
+
+    Args:
+        interval_length (int): Length of interval to be generated.
+        chrom_lengths: Either Dict of pd.Series with chromosomes' lengths.
+
+    Returns:
+        A tuple of chromosome, start and end (of interval).
+    """
+    chrom_lengths = pd.Series(chrom_lengths) if isinstance(chrom_lengths, dict) else chrom_lengths
+    chrom_lengths = (chrom_lengths - interval_length + 1).clip(0)
+
+    chrom, start = random_genomic_position(chrom_lengths)
+    end = start + interval_length - 1
+    
+    return chrom, start, end
 
 
 def _random_chr(chrom_lengths: pd.Series):

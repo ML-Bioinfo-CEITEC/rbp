@@ -19,7 +19,7 @@ class PyTest(TestCommand):
 
 setup(
     name='rbp',
-    version='0.1.0',
+    version='0.1.1',
     description='Python utils of RBP Bioinformatics.',
     author='RBP Bioinformatics',
     author_email='lamparna@gmail.com',
