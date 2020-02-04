@@ -16,7 +16,7 @@ def one_hot_encoding(seq_list: Iterable[str], alphabet: Dict[str, int] = ACTG) -
         alphabet: Dictionary mapping letters of alphabet to index.
 
     Returns:
-        3D numpy array (number of sequences x length x sixe of the alphabet)
+        3D numpy array (number of sequences x length of one sequence x sixe of the alphabet)
     """
 
     n = len(seq_list)

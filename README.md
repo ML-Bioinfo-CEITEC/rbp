@@ -50,4 +50,17 @@ If you have an idea how to improve the package, put it on [the List](https://doc
 ### Codestyle
 Linters are your friends. For Visual Studio, I recommend PEP-8 and FLAKE8 with minor relaxations (e.g. allow longer lines).
 
+### Pushing to Python Package Index 
 
+I am following [this guide](https://medium.com/@joel.barmettler/how-to-upload-your-python-package-to-pypi-65edc5fe9c56). To push a new version to PyPI, first check that all tests are passing (`make test`), then increase the version of `rbp` in `setup.py` and finally run the following:
+
+```
+  python setup.py sdist
+  twine upload dist/*
+```
+
+You need to have an account at [PyPI](https://pypi.org/) and be registered as the package's maintainer.
+
+### GitHub Mirror
+
+This repository has a mirror on GitHub [simecek/rbp](https://github.com/simecek/rbp), mostly to use GitHub apps for countinuous developement and code coverage. Push to this repository using `git push --mirror github`. Create a new mirror from an empty repository by `git remote add NAME_OF_MIRROR git@github.com:USER_NAME/rbp.git`.
