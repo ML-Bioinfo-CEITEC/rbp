@@ -7,7 +7,7 @@ This package contains Python tools frequently used at the Panagiotis Alexiou's g
  - For testing, we use pytest.  
  - Please, use virtualenv / pyenv / conda environments. 
  - To make your life easier, set up [GitLab SSH keys](https://gitlab.com/help/ssh/README#generating-a-new-ssh-key-pair) (if you have never done that, let me help you).
- - Ask for forgiveness, not for permission. We are currently all admins, you are allowed to push to master branch.
+ - Ask for forgiveness, not for permission. We are currently all admins, you are allowed to push to the master branch.
 
 ### Install
 
@@ -33,8 +33,8 @@ We describe just high-level structure of package. Details related to particular 
 
 ## Development
  - Update master: `git checkout master`, `git pull` 
- - Modify the code (write new module)
- - **Always** write tests, keep the test coverage over 80%.
+ - Modify the code (e.g. add a new module).
+ - **Always** write tests.
  - Run tests as `make test` to check everything works, you can also test a specific file or tests in a specific folder with `pytest -v ./tests/test_specific_file.py`.
  - Commit the changes to git and push them to Gitlab: `git push origin HEAD` (Never `push --force` to master!)
  - Consider adding an example or a notebook (be nice to future self and the others).
