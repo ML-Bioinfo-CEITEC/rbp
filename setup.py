@@ -42,17 +42,23 @@ setup(
         'seaborn>=0.9.0',
         'matplotlib>=3.1.1',
         'tqdm>=4.42.1',
+        'pybedtools>=0.8.1',
+        'pyBigWig>=0.3.17'
+
     ],
     tests_require=['pytest'],
     cmdclass={'test': PyTest},
     include_package_data=True,
     package_data={},
     classifiers=[
-        'Development Status :: 3 - Alpha',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
-        'Intended Audience :: Developers',      # Define that your audience are developers
+        # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
+        'Development Status :: 3 - Alpha',
+        # Define that your audience are developers
+        'Intended Audience :: Developers',
         'Topic :: Software Development :: Build Tools',
         'License :: OSI Approved :: MIT License',   # Again, pick a license
-        'Programming Language :: Python :: 3',      # Specify which pyhton versions that you want to support
+        # Specify which pyhton versions that you want to support
+        'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
