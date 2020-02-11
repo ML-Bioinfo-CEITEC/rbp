@@ -1,2 +1,3 @@
 from .genomic_position import random_genomic_position, random_genomic_interval
 from .seq_permutation import seq_permutation
+from .random_intervals import gen_random_intervals

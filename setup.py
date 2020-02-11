@@ -19,7 +19,7 @@ class PyTest(TestCommand):
 
 setup(
     name='rbp',
-    version='0.1.1',
+    version='0.1.2',
     description='Python utils of RBP Bioinformatics.',
     author='RBP Bioinformatics',
     author_email='lamparna@gmail.com',
@@ -37,14 +37,13 @@ setup(
         'codecov>=2.0.15',
         'pytest-cov>=2.6.1',
         'numpy>=1.17.0',
-        'pandas>=1.0.0',
+        'pandas>=0.25.0',
         'pyaml>=18.11.0',
         'seaborn>=0.9.0',
         'matplotlib>=3.1.1',
-        'tqdm>=4.42.1',
+        'tqdm>=4.41.1',
         'pybedtools>=0.8.1',
         'pyBigWig>=0.3.17'
-
     ],
     tests_require=['pytest'],
     cmdclass={'test': PyTest},
