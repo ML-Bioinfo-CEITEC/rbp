@@ -1,4 +1,3 @@
-import pytest
 import os
 import pandas as pd
 import io
@@ -6,13 +5,8 @@ from rbp.preprocessing import bed2fa
 
 
 def test_bed2fa_from_file():
-    cwd = os.getcwd()
-    relative_path = "/preprocessing"
-    bed_path = cwd.replace(
-        relative_path, "/data/test_bed.bed")
-
-    reference_path = cwd.replace(
-        relative_path, "/data/test_reference.fa")
+    bed_path = "tests/data/test_bed.bed"
+    reference_path = "tests/data/test_reference.fa"
 
     assert os.path.exists(bed_path)
     assert os.path.exists(reference_path)
@@ -24,10 +18,7 @@ def test_bed2fa_from_file():
 
 
 def test_from_dataframe():
-    cwd = os.getcwd()
-    relative_path = "/preprocessing"
-    reference_path = cwd.replace(
-        relative_path, "/data/test_reference.fa")
+    reference_path = "tests/data/test_reference.fa"
 
     assert os.path.exists(reference_path)
     bed_string = io.StringIO(
