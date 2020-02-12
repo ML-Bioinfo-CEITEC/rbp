@@ -3,6 +3,7 @@
 all: develop
 
 install:
+	sudo apt-get install bedtools
 	pip install -r requirements.txt
 	python setup.py develop
 

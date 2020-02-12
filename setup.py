@@ -19,7 +19,7 @@ class PyTest(TestCommand):
 
 setup(
     name='rbp',
-    version='0.1.1',
+    version='0.1.2',
     description='Python utils of RBP Bioinformatics.',
     author='RBP Bioinformatics',
     author_email='lamparna@gmail.com',
@@ -37,22 +37,27 @@ setup(
         'codecov>=2.0.15',
         'pytest-cov>=2.6.1',
         'numpy>=1.17.0',
-        'pandas>=1.0.0',
+        'pandas>=0.25.0',
         'pyaml>=18.11.0',
         'seaborn>=0.9.0',
         'matplotlib>=3.1.1',
-        'tqdm>=4.42.1',
+        'tqdm>=4.41.1',
+        'pybedtools>=0.8.1',
+        'pyBigWig>=0.3.17'
     ],
     tests_require=['pytest'],
     cmdclass={'test': PyTest},
     include_package_data=True,
     package_data={},
     classifiers=[
-        'Development Status :: 3 - Alpha',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
-        'Intended Audience :: Developers',      # Define that your audience are developers
+        # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
+        'Development Status :: 3 - Alpha',
+        # Define that your audience are developers
+        'Intended Audience :: Developers',
         'Topic :: Software Development :: Build Tools',
         'License :: OSI Approved :: MIT License',   # Again, pick a license
-        'Programming Language :: Python :: 3',      # Specify which pyhton versions that you want to support
+        # Specify which pyhton versions that you want to support
+        'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
