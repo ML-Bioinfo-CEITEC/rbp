@@ -17,9 +17,10 @@ def test_bed2fa_from_file():
     assert os.path.exists(bed_path)
     assert os.path.exists(reference_path)
 
-    expeted_output = ""
+    expeted_output = ["AACTTCCAAG", "TTTGTCCTTTCTAGTTCTGT",
+                      "GAGCTTTTGT", "TTTGTCCTTTCTAGTTCTGTGCATAGGTGCTGCCT", "ACTT"]
     actual_output = bed2fa.get_fasta(bed_path, reference_path)
-    assert actual_output == expeted_output
+    assert actual_output.sequence.tolist() == expeted_output
 
 
 def test_from_dataframe():
@@ -32,6 +33,12 @@ def test_from_dataframe():
     bed_string = io.StringIO(
         "test\t10\t20\tint1\t.\t+\ntest\t30\t50\tint2\t.\t+\ntest\t25\t35\tint3\t.\t+\ntest\t30\t65\tint4\t.\t+\ntest\t11\t15\tint5\t.\t+\n")
     intervals = pd.read_csv(bed_string, sep="\t")
-    expeted_output = ""
-    actual_output = bed2fa.get_fasta(bed_path, reference_path)
-    assert actual_output == expeted_output
+    expeted_output = [
+        "TTTGTCCTTTCTAGTTCTGT",
+        "GAGCTTTTGT",
+        "TTTGTCCTTTCTAGTTCTGTGCATAGGTGCTGCCT",
+        "ACTT"
+    ]
+
+    actual_output = bed2fa.get_fasta(intervals, reference_path)
+    assert actual_output.sequence.tolist() == expeted_output

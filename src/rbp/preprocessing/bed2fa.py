@@ -37,7 +37,7 @@ def get_fasta(intervals: Union[str, pd.DataFrame], reference: str, tab: bool = T
         seq_tab = pd.read_csv(
             a.seqfn, header=None, names=["fasta_id", "sequence"], sep="\t"
         )
-        seq_tab["binding_sequence"] = seq_tab["sequence"].str.upper()
+        seq_tab["sequence"] = seq_tab["sequence"].str.upper()
         return seq_tab  # return Pandas df of name,sequences
     else:
         with open(a.seqfn, 'r') as fi:
