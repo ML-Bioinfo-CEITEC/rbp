@@ -33,7 +33,6 @@ MANIFEST
 
 # pyenv
 .python-version
-aerials-experiments.iml
 .idea
 .env
 .venv
