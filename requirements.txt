@@ -11,12 +11,14 @@ matplotlib==3.2.0rc3
 more-itertools==8.2.0
 numpy==1.18.1
 packaging==20.1
-pandas==1.0.0
+pandas==0.25.3
 pluggy==0.13.1
 py==1.8.1
 pyaml==19.12.0
+pybedtools==0.8.1
 pyBigWig==0.3.17
 pyparsing==2.4.6
+pysam==0.15.4
 pytest==5.3.5
 pytest-cov==2.8.1
 python-dateutil==2.8.1
