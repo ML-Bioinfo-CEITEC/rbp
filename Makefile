@@ -3,8 +3,9 @@
 all: develop
 
 install:
-	sudo apt-get install zlib1g-dev
+	sudo apt-get update
 	sudo apt-get install bedtools
+	sudo apt-get install zlib1g-dev
 	pip install -r requirements.txt
 	python setup.py develop
 
@@ -13,6 +14,3 @@ develop:
 
 test:
 	python setup.py test
-
-clean_python_cache:
-	find . | grep -E "(__pycache__|\.pyc|\.pyo$$)" | xargs rm -rf
