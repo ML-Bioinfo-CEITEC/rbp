@@ -32,7 +32,7 @@ setup(
     scripts=[],
     setup_requires=['pytest-runner'],
     install_requires=[
-        'pip==19.2.2',
+        'pip>=20.0.1',
         'pytest>=4.6.1',
         'codecov>=2.0.15',
         'pytest-cov>=2.6.1',
