@@ -15,6 +15,7 @@ pandas==1.0.0
 pluggy==0.13.1
 py==1.8.1
 pyaml==19.12.0
+pyBigWig==0.3.17
 pyparsing==2.4.6
 pytest==5.3.5
 pytest-cov==2.8.1
