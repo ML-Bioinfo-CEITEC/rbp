@@ -36,6 +36,7 @@ We describe just high-level structure of package. Details related to particular 
  - Modify the code (e.g. add a new module).
  - **Always** write tests.
  - Run tests as `make test` to check everything works, you can also test a specific file or tests in a specific folder with `pytest -v ./tests/test_specific_file.py`.
+ - If you added a new dependence, update `setup.py` and `requirements.txt` (ask for help if you need it).
  - Commit the changes to git and push them to Gitlab: `git push origin HEAD` (Never `push --force` to master!)
  - Consider adding an example or a notebook (be nice to future self and the others).
  - Ask somebody else from the lab to discuss the changes you made. Document what you have done.
