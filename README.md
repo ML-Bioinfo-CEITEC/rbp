@@ -5,11 +5,11 @@
 
 This package contains Python tools for RNA Biology, frequently used at the Panagiotis Alexiou's group at CEITEC (Brno, Czechia).
 
-### Introduction
+### For lab members
  - We use Python3 (ideally 3.7.4)   
  - For testing, we use pytest.  
- - Please, use virtualenv / pyenv / conda environments. 
- - To make your life easier, set up [GitHub SSH keys](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) (if you have never done that, let me help you).
+ - To make your life easier, get GitHub account, ask to be added to `ML-Bioinfo-CEITEC` organization and set up [GitHub SSH keys](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) (if you have never done that, let me help you).
+ - Please, use virtualenv / pyenv / conda environments for everybody's sake.
  - Ask for forgiveness, not for permission. We are currently all admins, you are allowed to push to the master branch.
 
 ### Install
@@ -19,7 +19,7 @@ From [GitHub](https://github.com/ML-Bioinfo-CEITEC/rbp):
    - `git clone git@github.com:ML-Bioinfo-CEITEC/rbp.git`
  - Cd into the folder and install `rbp` package with `make/setuptools`
    - `cd rbp`
-   - `make develop` 
+   - `make develop` (or `make install`) 
 
 From [PyPi](https://pypi.org/project/rbp/) (do not use for development):
  - `pip install rbp`
@@ -31,6 +31,7 @@ We describe just high-level structure of package. Details related to particular 
  - `tests` - Test coverage of rbp package.
  - `src/rbp`  - Contains the package itself.
    - `encoding` -   functions to encode/decode genomic sequences into numeric vectors
+   - `preprocessing` - conversion between formats (bed -> fasta, bed -> conservation)
    - `random` -   random genomic coordinates, permutations (shuffling) of genomic sequences
    - `utils` -   system utilities (file i/o, parsing arguments, ...)
 
@@ -40,19 +41,19 @@ We describe just high-level structure of package. Details related to particular 
  - **Always** write tests.
  - Run tests as `make test` to check everything works, you can also test a specific file or tests in a specific folder with `pytest -v ./tests/test_specific_file.py`.
  - If you added a new dependence, update `setup.py` and `requirements.txt` (ask for help if you need it).
- - Commit the changes to git and push them to GitHub: `git push origin HEAD` (Never `push --force` to master!)
+ - Commit the changes to git and push them to GitHub: `git push` (Never `push --force` to master!)
  - Consider adding an example or a notebook (be nice to future self and the others).
- - Ask somebody else from the lab to discuss the changes you made. Document what you have done.
+ - Ask somebody else from the lab to discuss the changes you made. Document what have you done.
  
 ### How to rock
 If you develop something big or refactor the whole package, create a new branch `git checkout -b my_huge_feature` and pull request. Ask for review before merging to master. 
 
 If you have a problem, probably everyone has a similar problem. Ask for help, add more documentation, fix it globally and for everyone.
 
-If you have an idea how to improve the package, put it on [the List](https://docs.google.com/document/d/16rYS_vpz0vdQ3F9lHVQML1CkQCgohLGFX79erP8NYPY/edit?usp=sharing). If you have time, check the List and implement something. 
+If you have an idea how to improve the package, put it as an [Issue](https://github.com/ML-Bioinfo-CEITEC/rbp/issues). If you have time, check the issues and fix/implement something. 
 
 ### Codestyle
-Linters are your friends. For Visual Studio, I recommend PEP-8 and FLAKE8 with minor relaxations (e.g. allow longer lines).
+Linters are your friends. For Visual Studio, I recommend [PEP-8 and FLAKE8](https://code.visualstudio.com/docs/python/linting#_specific-linters) with minor relaxations (e.g. allow longer lines).
 
 ### Pushing to Python Package Index 
 
@@ -67,4 +68,4 @@ You need to have an account at [PyPI](https://pypi.org/) and be registered as th
 
 ### GitLab Mirror
 
-This repository has a mirror on GitLab [simecek/rbp](https://github.com/simecek/rbp). Push to this repository using `git push --mirror gitlab`. Create a new mirror from an empty repository by `git remote add NAME_OF_MIRROR git@gitlab.com:USER_NAME/rbp.git`.
+This repository has a mirror on GitLab [RBP_Bioinformatics/rbp](https://gitlab.com/RBP_Bioinformatics/rbp). Push to this repository using `git push --mirror gitlab`. Create a new mirror from an empty repository by `git remote add NAME_OF_MIRROR git@gitlab.com:USER_NAME/rbp.git`.
