@@ -1,6 +1,7 @@
 [![PyPI version](https://badge.fury.io/py/rbp.svg)](https://badge.fury.io/py/rbp) 
 [![Travis-CI status](https://travis-ci.org/ML-Bioinfo-CEITEC/rbp.svg?branch=master)](https://travis-ci.org/ML-Bioinfo-CEITEC/rbp?branch=master)
 [![codecov](https://codecov.io/gh/ML-Bioinfo-CEITEC/rbp/branch/master/graph/badge.svg)](https://codecov.io/gh/ML-Bioinfo-CEITEC/rbp)
+[![ReviewNB](https://img.shields.io/badge/render-reviewnb-orange.svg)][https://app.reviewnb.com/ML-Bioinfo-CEITEC/rbp/]
 
 ## RNA Biology Package
 
