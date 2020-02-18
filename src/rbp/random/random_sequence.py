@@ -3,7 +3,7 @@ import io
 import pandas as pd
 
 
-def random_nucleotides(sample_size: int, seq_length: int, seed: int = 1789):
+def random_nucleotides(sample_size: int, seq_length: int, seed: int = None):
     """ Return a random list of DNA nucleotides sequences.
 
     Args:
@@ -14,7 +14,9 @@ def random_nucleotides(sample_size: int, seq_length: int, seed: int = 1789):
     Returns:
         list of generated sequences
     """
-    random.seed(seed)  # set random seed
+    
+    if seed:
+        random.seed(seed)  # set random seed
     alphabet = list("TAGC")  # define DNA nucleotides
     # generate sequences
     seq_list = [
