@@ -1,5 +1,5 @@
 [![PyPI version](https://badge.fury.io/py/rbp.svg)](https://badge.fury.io/py/rbp) 
-[![Travis-CI status](https://travis-ci.org/simecek/rbp.svg?branch=master)](https://travis-ci.org/simecek/rbp?branch=master)
+[![Travis-CI status](https://travis-ci.org/ML-Bioinfo-CEITEC/rbp.svg?branch=master)](https://travis-ci.org/ML-Bioinfo-CEITEC/rbp?branch=master)
 
 ## RNA Biology Package
 
