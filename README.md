@@ -7,7 +7,7 @@ This package contains Python tools for RNA Biology, frequently used at the Panag
 
 ### For lab members
  - We use Python3 (ideally 3.7.4)   
- - For testing, we use pytest.  
+ - For testing, we use pytest. (For automated testing, we use [Travis CI](https://travis-ci.org/ML-Bioinfo-CEITEC/rbp?branch=master).)
  - To make your life easier, get GitHub account, ask to be added to `ML-Bioinfo-CEITEC` organization and set up [GitHub SSH keys](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) (if you have never done that, let me help you).
  - Please, use virtualenv / pyenv / conda environments for everybody's sake.
  - Ask for forgiveness, not for permission. We are currently all admins, you are allowed to push to the master branch.
