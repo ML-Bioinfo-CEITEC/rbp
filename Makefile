@@ -16,4 +16,4 @@ test:
 	python setup.py test
 
 test_coverage:
-	python setup.py test -a '--cov=.'
+	python setup.py test -a '--cov=./src -v tests/'
