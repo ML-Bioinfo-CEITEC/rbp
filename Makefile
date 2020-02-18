@@ -14,3 +14,6 @@ develop:
 
 test:
 	python setup.py test
+
+test_coverage:
+	python setup.py test -a '--cov=.'
