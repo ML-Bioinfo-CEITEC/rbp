@@ -1,22 +1,22 @@
 [![PyPI version](https://badge.fury.io/py/rbp.svg)](https://badge.fury.io/py/rbp) 
 [![Travis-CI status](https://travis-ci.org/simecek/rbp.svg?branch=master)](https://travis-ci.org/simecek/rbp?branch=master)
 
-## RBP
+## RNA Biology Package
 
-This package contains Python tools frequently used at the Panagiotis Alexiou's group at CEITEC (Brno, Czechia).
+This package contains Python tools for RNA Biology, frequently used at the Panagiotis Alexiou's group at CEITEC (Brno, Czechia).
 
 ### Introduction
  - We use Python3 (ideally 3.7.4)   
  - For testing, we use pytest.  
  - Please, use virtualenv / pyenv / conda environments. 
- - To make your life easier, set up [GitLab SSH keys](https://gitlab.com/help/ssh/README#generating-a-new-ssh-key-pair) (if you have never done that, let me help you).
+ - To make your life easier, set up [GitHub SSH keys](https://help.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh) (if you have never done that, let me help you).
  - Ask for forgiveness, not for permission. We are currently all admins, you are allowed to push to the master branch.
 
 ### Install
 
-From [GitLab](https://gitlab.com/RBP_Bioinformatics/rbp):
+From [GitHub](https://github.com/ML-Bioinfo-CEITEC/rbp):
  - Clone this repository
-   - `git clone git@gitlab.com:RBP_Bioinformatics/rbp.git`
+   - `git clone git@github.com:ML-Bioinfo-CEITEC/rbp.git`
  - Cd into the folder and install `rbp` package with `make/setuptools`
    - `cd rbp`
    - `make develop` 
@@ -40,7 +40,7 @@ We describe just high-level structure of package. Details related to particular 
  - **Always** write tests.
  - Run tests as `make test` to check everything works, you can also test a specific file or tests in a specific folder with `pytest -v ./tests/test_specific_file.py`.
  - If you added a new dependence, update `setup.py` and `requirements.txt` (ask for help if you need it).
- - Commit the changes to git and push them to Gitlab: `git push origin HEAD` (Never `push --force` to master!)
+ - Commit the changes to git and push them to GitHub: `git push origin HEAD` (Never `push --force` to master!)
  - Consider adding an example or a notebook (be nice to future self and the others).
  - Ask somebody else from the lab to discuss the changes you made. Document what you have done.
  
@@ -65,6 +65,6 @@ I am following [this guide](https://medium.com/@joel.barmettler/how-to-upload-yo
 
 You need to have an account at [PyPI](https://pypi.org/) and be registered as the package's maintainer.
 
-### GitHub Mirror
+### GitLab Mirror
 
-This repository has a mirror on GitHub [simecek/rbp](https://github.com/simecek/rbp), mostly to use GitHub apps for countinuous developement and code coverage. Push to this repository using `git push --mirror github`. Create a new mirror from an empty repository by `git remote add NAME_OF_MIRROR git@github.com:USER_NAME/rbp.git`.
+This repository has a mirror on GitLab [simecek/rbp](https://github.com/simecek/rbp). Push to this repository using `git push --mirror gitlab`. Create a new mirror from an empty repository by `git remote add NAME_OF_MIRROR git@gitlab.com:USER_NAME/rbp.git`.
