@@ -8,3 +8,6 @@ install:
 # command to run tests
 script:
   - make test
+# to upload code coverage
+after_success:
+  - codecov
