@@ -48,7 +48,7 @@ We describe just high-level structure of package. Details related to particular 
  - Ask somebody else from the lab to discuss the changes you made. Document what have you done.
  
 ### How to rock
-If you develop something big or refactor the whole package, create a new branch `git checkout -b my_huge_feature` and pull request. Ask for review before merging to master. 
+If you develop something big or refactor the whole package, create a new branch `git checkout -b my_huge_feature` and pull request. Ask for review before merging to master. (Are pull requests a new concept to you? Read this [friendly guide](https://github.blog/2015-01-21-how-to-write-the-perfect-pull-request/) to help you write/review the first one.)
 
 If you have a problem, probably everyone has a similar problem. Ask for help, add more documentation, fix it globally and for everyone.
 
