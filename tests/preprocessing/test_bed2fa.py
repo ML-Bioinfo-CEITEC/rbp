@@ -3,12 +3,12 @@ import pandas as pd
 from pathlib import Path
 from rbp.preprocessing import bed2fa
 
-test_data_dir = Path(__file__).parents[0] / '../data'
+test_data_dir = Path(__file__).parents[0] / '..' / 'data'
 
 
 def test_bed2fa_from_file():
-    bed_path = test_data_dir / "test_bed.bed"
-    reference_path = test_data_dir / "test_reference.fa"
+    bed_path = test_data_dir / 'test_bed.bed'
+    reference_path = test_data_dir / 'test_reference.fa'
 
     assert bed_path.exists()
     assert reference_path.exists()
@@ -20,7 +20,7 @@ def test_bed2fa_from_file():
 
 
 def test_from_dataframe():
-    reference_path = test_data_dir / "test_reference.fa"
+    reference_path = test_data_dir / 'test_reference.fa'
 
     assert reference_path.exists()
     bed_string = io.StringIO(
