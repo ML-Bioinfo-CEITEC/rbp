@@ -44,3 +44,6 @@ venv.bak/
 
 # codecov
 .coverage
+
+# VS Code
+settings.json

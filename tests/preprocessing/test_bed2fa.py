@@ -1,26 +1,28 @@
-import os
-import pandas as pd
 import io
+import pandas as pd
+from pathlib import Path
 from rbp.preprocessing import bed2fa
+
+test_data_dir = Path(__file__).parents[0] / '../data'
 
 
 def test_bed2fa_from_file():
-    bed_path = "tests/data/test_bed.bed"
-    reference_path = "tests/data/test_reference.fa"
+    bed_path = test_data_dir / "test_bed.bed"
+    reference_path = test_data_dir / "test_reference.fa"
 
-    assert os.path.exists(bed_path)
-    assert os.path.exists(reference_path)
+    assert bed_path.exists()
+    assert reference_path.exists()
 
     expeted_output = ["AACTTCCAAG", "TTTGTCCTTTCTAGTTCTGT",
                       "GAGCTTTTGT", "TTTGTCCTTTCTAGTTCTGTGCATAGGTGCTGCCT", "ACTT"]
-    actual_output = bed2fa.get_fasta(bed_path, reference_path)
+    actual_output = bed2fa.get_fasta(str(bed_path), str(reference_path))
     assert actual_output.sequence.tolist() == expeted_output
 
 
 def test_from_dataframe():
-    reference_path = "tests/data/test_reference.fa"
+    reference_path = test_data_dir / "test_reference.fa"
 
-    assert os.path.exists(reference_path)
+    assert reference_path.exists()
     bed_string = io.StringIO(
         "test\t10\t20\tint1\t.\t+\ntest\t30\t50\tint2\t.\t+\ntest\t25\t35\tint3\t.\t+\ntest\t30\t65\tint4\t.\t+\ntest\t11\t15\tint5\t.\t+\n")
     intervals = pd.read_csv(bed_string, sep="\t")
@@ -31,5 +33,5 @@ def test_from_dataframe():
         "ACTT"
     ]
 
-    actual_output = bed2fa.get_fasta(intervals, reference_path)
+    actual_output = bed2fa.get_fasta(intervals, str(reference_path))
     assert actual_output.sequence.tolist() == expeted_output
