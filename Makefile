@@ -1,4 +1,4 @@
-.PHONY: develop test clean_python_cache all install
+.PHONY: develop test test_coverage all install
 
 all: develop
 
