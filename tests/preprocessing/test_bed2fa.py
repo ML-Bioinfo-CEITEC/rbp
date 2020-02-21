@@ -1,4 +1,5 @@
 import io
+import pytest
 import pandas as pd
 from pathlib import Path
 from rbp.preprocessing import bed2fa
@@ -18,6 +19,10 @@ def test_bed2fa_from_file():
     actual_output = bed2fa.get_fasta(str(bed_path), str(reference_path))
     assert actual_output.sequence.tolist() == expeted_output
 
+    actual_output2 = bed2fa.get_fasta(str(bed_path), str(reference_path), tab=False)
+    expeted_output2 = ">int1::test:10-20(+)\nAACTTCCAAG"
+    assert actual_output2[:31] == expeted_output2
+
 
 def test_from_dataframe():
     reference_path = test_data_dir / 'test_reference.fa'
@@ -35,3 +40,8 @@ def test_from_dataframe():
 
     actual_output = bed2fa.get_fasta(intervals, str(reference_path))
     assert actual_output.sequence.tolist() == expeted_output
+
+
+def test_fails_on_wrong_type():
+    with pytest.raises(TypeError):
+        bed2fa.get_fasta(float(1), pd.DataFrame())
