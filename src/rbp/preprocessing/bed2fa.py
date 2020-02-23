@@ -1,6 +1,5 @@
 import pandas as pd
 from pybedtools import BedTool
-import io
 from typing import Union
 
 
@@ -23,7 +22,7 @@ def get_fasta(intervals: Union[str, pd.DataFrame], reference: str, tab: bool = T
     if isinstance(intervals, str):
         assert intervals.endswith('bed'), 'required BED-6 file as input file'
         bed_obj = BedTool(intervals)  # creates bedtool obj
-    elif isinstance(intervals, pd.core.frame.DataFrame) == True:
+    elif isinstance(intervals, pd.core.frame.DataFrame):
         bed_obj = BedTool.from_dataframe(intervals)  # creates bedtool obj
     else:
         raise TypeError("Input must be BED file or Pandas DataFrame")

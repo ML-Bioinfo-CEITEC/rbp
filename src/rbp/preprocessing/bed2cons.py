@@ -27,7 +27,7 @@ def get_conservation(intervals: Union[str, pd.DataFrame], reference: str):
         intervals_df = pd.read_csv(
             intervals, sep="\t", names=field_name.keys(), dtype=field_name,
         )
-    elif isinstance(tst, pd.core.frame.DataFrame) == True:
+    elif isinstance(intervals, pd.core.frame.DataFrame):
         pass
     else:
         raise TypeError("Input must be BED file or Pandas DataFrame")
