@@ -1,9 +1,9 @@
 import pandas as pd
 from pybedtools import BedTool
-
+from typing import Optional
 
 def gen_random_intervals(
-    sample_size: int, interval_size: int, reference: str, seed: int = 1789
+    sample_size: int, interval_size: int, reference: str, seed: Optional[int] = None 
 ):
     """ Return random gemomic intervals as BED file
 
