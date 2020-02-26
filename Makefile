@@ -7,9 +7,13 @@ install:
 	sudo apt-get install bedtools
 	sudo apt-get install zlib1g-dev
 	pip install -r requirements.txt
-	python setup.py develop
+	python setup.py install
 
 develop:
+	sudo apt-get update
+	sudo apt-get install bedtools
+	sudo apt-get install zlib1g-dev
+	pip install -r requirements.txt
 	python setup.py develop
 
 test:

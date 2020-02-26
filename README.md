@@ -21,7 +21,7 @@ From [GitHub](https://github.com/ML-Bioinfo-CEITEC/rbp):
    - `git clone git@github.com:ML-Bioinfo-CEITEC/rbp.git`
  - Cd into the folder and install `rbp` package with `make/setuptools`
    - `cd rbp`
-   - `make develop` (or `make install`) 
+   - `make develop` 
 
 From [PyPi](https://pypi.org/project/rbp/) (do not use for development):
  - `pip install rbp`

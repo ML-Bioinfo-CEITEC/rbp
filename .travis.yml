@@ -4,7 +4,7 @@ python:
   - "3.7"
 # command to install dependencies
 install:
-  - make install
+  - make develop
 # command to run tests
 script:
   - make test_coverage
