@@ -30,12 +30,13 @@ From [PyPi](https://pypi.org/project/rbp/) (do not use for development):
 We describe just high-level structure of package. Details related to particular modules etc. find in dedicated READMEs.
  - `examples` - Examples should be kept up to date. They demonstrate package functionalities.
  - `notebooks` - Notebooks are excluded from tests, showcasing best practices and interesting experiments. Those notebooks can become obsolete during the time. Notebooks may use packages not included in `requirements.txt`.
- - `tests` - Test coverage of rbp package.
  - `src/rbp`  - Contains the package itself.
    - `encoding` -   functions to encode/decode genomic sequences into numeric vectors
    - `preprocessing` - conversion between formats (bed -> fasta, bed -> conservation)
    - `random` -   random genomic coordinates, permutations (shuffling) of genomic sequences
    - `utils` -   system utilities (file i/o, parsing arguments, ...)
+ - `tests` - Test coverage of rbp package.
+ - `tutorials` - Tutorials for newcomers to the lab.
 
 ## Development
  - Update master: `git checkout master`, `git pull` 
