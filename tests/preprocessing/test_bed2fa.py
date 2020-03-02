@@ -20,8 +20,8 @@ def test_bed2fa_from_file():
     assert actual_output.sequence.tolist() == expeted_output
 
     actual_output2 = bed2fa.get_fasta(str(bed_path), str(reference_path), tab=False)
-    expeted_output2 = ">int1::test:10-20(+)\nAACTTCCAAG"
-    assert actual_output2[:31] == expeted_output2
+    for s in expeted_output:
+        assert s in actual_output2
 
 
 def test_from_dataframe():
