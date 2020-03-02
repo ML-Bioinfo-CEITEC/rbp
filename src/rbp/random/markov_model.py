@@ -40,7 +40,7 @@ class MarkovModel:
         k = self.k
 
         for s in seqs:
-            if not set(s).issubset({'A', 'C', 'G', 'T'}):  # sequences of A,C,T,G letters only
+            if only_valid_seqs and not set(s).issubset({'A', 'C', 'G', 'T'}):  # sequences of A,C,T,G letters only
                 continue
             prev_kmer = None
             for i in range(0, len(s), k):
@@ -66,7 +66,7 @@ class MarkovModel:
         Args:
             length: length of the sequence to be generated
             seed: beginning of the sequence (default is an empty string)
-        
+
         Returns:
             string of length `length`
         """
@@ -90,7 +90,7 @@ class MarkovModel:
             prev_kmer = curr_kmer
 
         return s[:length]
-        
+
 
 def relative_multinomial(counts: pd.Series, total: Optional[int] = None):
     """Helper function drawing one sample from a multinomial distribution
