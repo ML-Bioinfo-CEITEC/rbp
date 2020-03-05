@@ -1,5 +1,4 @@
 ## Jupyter Notebooks
----
 
 Jupyter Notebooks showcase best practices and interesting experiments:
  - [Intro_To_RBP](Intro_To_RBP.ipynb): a gentle introduction to the package's functionality [![](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ML-Bioinfo-CEITEC/rbp/blob/master/notebooks/Intro_To_RBP.ipynb)
