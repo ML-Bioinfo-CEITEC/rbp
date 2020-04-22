@@ -1,6 +1,4 @@
 import random
-import io
-import pandas as pd
 
 
 def random_nucleotides(sample_size: int, seq_length: int, seed: int = None):
